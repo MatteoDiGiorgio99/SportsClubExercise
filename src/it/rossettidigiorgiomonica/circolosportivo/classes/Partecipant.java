@@ -1,5 +1,11 @@
 package it.rossettidigiorgiomonica.circolosportivo.classes;
 
-public class Partecipant {
+import java.util.ArrayList;
+
+public class Partecipant extends Activity {
+	public Partecipant(String activityName, ArrayList<Partecipant> activityPartecipants) {
+		super(activityName, activityPartecipants);		
+	}
+
 	
 }

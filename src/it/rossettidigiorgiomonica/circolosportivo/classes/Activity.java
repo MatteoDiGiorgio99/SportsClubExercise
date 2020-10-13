@@ -6,7 +6,7 @@ public abstract class Activity {
 	private String activityName;
 	private ArrayList<Partecipant> activityPartecipants;
 	
-	public Activity(final String activityName) { this.activityName = activityName; this.activityPartecipants = new ArrayList<Partecipant>(); }
+	public Activity(final String activityName,ArrayList<Partecipant>activityPartecipants) { this.activityName = activityName; this.activityPartecipants = new ArrayList<Partecipant>(); }
 	
 	protected String getActivityName() { return this.activityName; }
 	protected void setActivityName(String newName) { this.activityName = newName; }
