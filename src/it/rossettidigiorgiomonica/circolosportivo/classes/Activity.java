@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public abstract class Activity {
 	private String activityName;
-	private ArrayList<Partecipant> activityPartecipants;
+	private ArrayList<Person> activityPartecipants;
 	
-	public Activity(final String activityName,ArrayList<Partecipant>activityPartecipants) { this.activityName = activityName; this.activityPartecipants = new ArrayList<Partecipant>(); }
+	public Activity(final String activityName) { this.activityName = activityName; this.activityPartecipants = new ArrayList<Person>(); }
 	
-	protected String getActivityName() { return this.activityName; }
-	protected void setActivityName(String newName) { this.activityName = newName; }
+	public String getActivityName() { return this.activityName; }
+	public void setActivityName(String newName) { this.activityName = newName; }
 	
-	protected ArrayList<Partecipant> getActivityPartecipants() { return this.activityPartecipants; }
-	protected void addActivityPartecipant(Partecipant toAdd) { this.activityPartecipants.add(toAdd); }
-	protected void removeActivityPartecipant(Partecipant toRemove) { this.activityPartecipants.remove(toRemove); } 
+	public ArrayList<Person> getActivityPartecipants() { return this.activityPartecipants; }
+	public void addActivityPartecipant(Person toAdd) { this.activityPartecipants.add(toAdd); }
+	public void removeActivityPartecipant(Person toRemove) { this.activityPartecipants.remove(toRemove); } 
 }

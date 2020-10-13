@@ -8,11 +8,21 @@ public class main {
 
 	public static void main(String[] args) {
 		
-	    ArrayList<Partecipant> activityPartecipants = null;
+	    ArrayList<Person> activityPartecipants = new ArrayList<Person>();
+	    
 	    Person bambino = new Person("camillo","benso","conte@di","cavour");
-	    activityPartecipants.add(0, bambino);
-		Activity course = new Course("hellow world",activityPartecipants);
+	    
+	    activityPartecipants.add(bambino);
+	    
+		Activity course = new Course("hellow world");
 		
+		for(Person p : activityPartecipants) {
+			course.addActivityPartecipant(p);
+		}
+		
+		for(Person p : course.getActivityPartecipants()) {
+			System.out.print(p.getname());
+		}
 	}
 
 }

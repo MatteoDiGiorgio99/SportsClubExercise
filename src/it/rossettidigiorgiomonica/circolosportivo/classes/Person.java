@@ -7,26 +7,23 @@ public  class Person {
 	private String surname;
 	private String email;
 	private String psw;
-	
-	private ArrayList<Person> Users;
-	
-	public Person(String string, String string2, String string3, String string4) {
 		
+	public Person(String name, String surname, String email, String psw) {
+		this.name = name;
+		this.surname = surname;
+		this.email = email;
+		this.psw = psw;
 	}
-	protected String getname() { return this.name; }
-	protected void setname(String newname) { this.name = newname; }
 	
-	protected String getsurnme() { return this.surname; }
-	protected void setsurname(String newsurname) { this.surname = newsurname; }
+	public String getname() { return this.name; }
+	public void setname(String newname) { this.name = newname; }
 	
-	protected String getemail() { return this.email; }
-	protected void setemail(String newemail) { this.email = newemail; }
+	public String getsurnme() { return this.surname; }
+	public void setsurname(String newsurname) { this.surname = newsurname; }
 	
-	protected String getpsw() { return this.psw; }
-	protected void setpsw(String newpsw) { this.psw = newpsw; }
+	public String getemail() { return this.email; }
+	public void setemail(String newemail) { this.email = newemail; }
 	
-	protected void addUsers(Person toAdd) { this.Users.add(toAdd); }
-	protected void removeUsers(Person toRemove) { this.Users.remove(toRemove); } 
-
-
+	public String getpsw() { return this.psw; }
+	public void setpsw(String newpsw) { this.psw = newpsw; }
 }
