@@ -1,28 +1,40 @@
 package it.rossettidigiorgiomonica.circolosportivo;
 
 import java.util.ArrayList;
+import java.util.*;
 
 import it.rossettidigiorgiomonica.circolosportivo.classes.*;
+
 
 public class main {
 
 	public static void main(String[] args) {
+
 		
-	    ArrayList<Person> activityPartecipants = new ArrayList<Person>();
-	    
-	    Person bambino = new Person("camillo","benso","conte@di","cavour");
-	    
-	    activityPartecipants.add(bambino);
-	    
-		Activity course = new Course("hellow world");
+		//Esempio persona con enum
+		Person bambino = new Person("camillo","benso","conte@di","cavour",Role.Admin);
 		
-		for(Person p : activityPartecipants) {
-			course.addActivityPartecipant(p);
+		//Array persone
+		ArrayList<Person> activityPartecipants = new ArrayList<Person>();
+		activityPartecipants.add(bambino);
+		
+		//Creo menù
+		
+		
+		//Scelta menù
+		System.out.print("Scegli l'opzione: ");
+		Scanner Input= new Scanner(System.in);
+		int Nchoice= Input.nextInt();
+	    System.out.print(Nchoice);
+	    
+	    //esecuzione della scelta
+		switch(Nchoice)
+		{
+		case 1:
+			//continue...
 		}
 		
-		for(Person p : course.getActivityPartecipants()) {
-			System.out.print(p.getname());
-		}
+		
 	}
 
 }

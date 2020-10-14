@@ -1,18 +1,21 @@
 package it.rossettidigiorgiomonica.circolosportivo.classes;
 
-import java.util.ArrayList;
+
 
 public  class Person {
 	private String name;
 	private String surname;
 	private String email;
 	private String psw;
-		
-	public Person(String name, String surname, String email, String psw) {
+	
+	private Role role;
+	
+	public Person(String name, String surname, String email, String psw,Role rol) {
 		this.name = name;
 		this.surname = surname;
 		this.email = email;
 		this.psw = psw;
+		this.role=rol;
 	}
 	
 	public String getname() { return this.name; }
@@ -26,4 +29,7 @@ public  class Person {
 	
 	public String getpsw() { return this.psw; }
 	public void setpsw(String newpsw) { this.psw = newpsw; }
+	
+	public Role getrole() { return this.role; }
+	public void setRole(Role rr) {this.role=rr;}
 }
