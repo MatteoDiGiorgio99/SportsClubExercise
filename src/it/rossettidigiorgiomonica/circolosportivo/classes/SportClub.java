@@ -11,6 +11,16 @@ public class SportClub {
 		this.activities = activities;
 	}
 	
+	public Person login(final String username, final String password) {
+		for(Person p : this.members) {
+			if(p.getEmail().contains(username) && p.getPassword().contains(password)) {
+				return p;
+			}
+		}
+		
+		return null;
+	}
+	
 	public void eventsRegistration(final String activityName, final Person member) {
 		Activity activity = getActivityFromList(activityName);
 		
