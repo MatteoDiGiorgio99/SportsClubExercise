@@ -1,39 +1,37 @@
 package it.rossettidigiorgiomonica.circolosportivo;
 
-import java.util.ArrayList;
 import java.util.*;
+import java.nio.charset.StandardCharsets; 
+import java.nio.file.*; 
+import java.io.*; 
 
 import it.rossettidigiorgiomonica.circolosportivo.classes.*;
 
 
 public class main {
-
 	public static void main(String[] args) {
-		while(true) {
-			//Print menu
-			printMenu();		
-			
-			//Get options and execute
-			optionExecutor();
-		}
-	}
-	
-	static void printMenu() {
+		boolean login = false;
 		
+		if(!login)
+			return;
 	}
 	
-	static void optionExecutor() {
-		System.out.print("Choose the option: ");
-		try (var input = new Scanner(System.in)) {
-			int Nchoice = input.nextInt();
-			System.out.print(Nchoice);
-			
-			// Choice execution
-			switch(Nchoice)
-			{
-				case 1:
-					//continue...
-			}
-		}
+	public static List<String> readFile(String fileName) 
+	{   
+		List<String> lines = Collections.emptyList(); 
+		try
+		{ 
+			lines = Files.readAllLines(Paths.get(fileName), StandardCharsets.UTF_8); 
+	    } 
+		catch (IOException e) 
+		{ 
+			e.printStackTrace(); 
+    	} 
+		
+		return lines;
+	}
+	
+	public static ArrayList<Activity> parseActivities(List<String> list) {
+		return null;
 	}
 }
