@@ -89,17 +89,12 @@ public class main {
 		}
 	}
 	
-	public static Logger initLogger() {
-		String canonicalPath = "";
-		
+	public static Logger initLogger() {	
 		try {
-			canonicalPath = new File(".").getCanonicalPath();
-			
-			
 		    Logger logger = Logger.getLogger("SportClubLogs");  
 		    FileHandler fh;
 		    
-			fh = new FileHandler(canonicalPath + "\\src\\\\it\\\\rossettidigiorgiomonica\\\\circolosportivo\\SportClubLogs.txt");
+			fh = new FileHandler("./src/it/rossettidigiorgiomonica/circolosportivo/SportClubLogs.txt");
 	        logger.addHandler(fh);
 	        SimpleFormatter formatter = new SimpleFormatter();  
 	        fh.setFormatter(formatter);
@@ -114,17 +109,9 @@ public class main {
 		return null;
 	}
 	
-	public static SportClub initClub() {
-		String canonicalPath = "";
-		
-		try {
-			canonicalPath = new File(".").getCanonicalPath();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-		List<String> activitiesRaw = readFile(canonicalPath + "\\src\\it\\rossettidigiorgiomonica\\circolosportivo\\sources\\activities.csv");
-		List<String> membersRaw = readFile(canonicalPath + "\\src\\it\\rossettidigiorgiomonica\\circolosportivo\\sources\\users.csv");
+	public static SportClub initClub() {	
+		List<String> activitiesRaw = readFile("./src/it/rossettidigiorgiomonica/circolosportivo/sources/activities.csv");
+		List<String> membersRaw = readFile("./src/it/rossettidigiorgiomonica/circolosportivo/sources/users.csv");
 			
 		ArrayList<Activity> activities = parseActivities(activitiesRaw);
 		ArrayList<Person> members = parseMembers(membersRaw);

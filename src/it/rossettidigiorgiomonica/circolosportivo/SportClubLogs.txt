@@ -1,14 +1,14 @@
-ott 15, 2020 5:57:00 PM it.rossettidigiorgiomonica.circolosportivo.main main
+ott 15, 2020 6:22:31 PM it.rossettidigiorgiomonica.circolosportivo.main main
 INFO: User admin@sportsclub.it logged in
-ott 15, 2020 5:57:00 PM it.rossettidigiorgiomonica.circolosportivo.main main
+ott 15, 2020 6:22:31 PM it.rossettidigiorgiomonica.circolosportivo.main main
 INFO: User testadd@sportclub.it added succesfully
-ott 15, 2020 5:57:00 PM it.rossettidigiorgiomonica.circolosportivo.main main
+ott 15, 2020 6:22:31 PM it.rossettidigiorgiomonica.circolosportivo.main main
 INFO: User testadd@sportclub.it edited succesfully
-ott 15, 2020 5:57:00 PM it.rossettidigiorgiomonica.circolosportivo.main main
+ott 15, 2020 6:22:31 PM it.rossettidigiorgiomonica.circolosportivo.main main
 INFO: User testadd@sportclub.it removed succesfully
-ott 15, 2020 5:57:00 PM it.rossettidigiorgiomonica.circolosportivo.main main
+ott 15, 2020 6:22:31 PM it.rossettidigiorgiomonica.circolosportivo.main main
 INFO: Activity testActivity1 added succesfully
-ott 15, 2020 5:57:00 PM it.rossettidigiorgiomonica.circolosportivo.main main
+ott 15, 2020 6:22:31 PM it.rossettidigiorgiomonica.circolosportivo.main main
 INFO: Activity testActivity1 edited succesfully
-ott 15, 2020 5:57:00 PM it.rossettidigiorgiomonica.circolosportivo.main main
+ott 15, 2020 6:22:31 PM it.rossettidigiorgiomonica.circolosportivo.main main
 INFO: Activity testActivity1 removed succesfully
