@@ -1,14 +1,18 @@
-ott 15, 2020 6:22:31 PM it.rossettidigiorgiomonica.circolosportivo.main main
-INFO: User admin@sportsclub.it logged in
-ott 15, 2020 6:22:31 PM it.rossettidigiorgiomonica.circolosportivo.main main
-INFO: User testadd@sportclub.it added succesfully
-ott 15, 2020 6:22:31 PM it.rossettidigiorgiomonica.circolosportivo.main main
-INFO: User testadd@sportclub.it edited succesfully
-ott 15, 2020 6:22:31 PM it.rossettidigiorgiomonica.circolosportivo.main main
-INFO: User testadd@sportclub.it removed succesfully
-ott 15, 2020 6:22:31 PM it.rossettidigiorgiomonica.circolosportivo.main main
-INFO: Activity testActivity1 added succesfully
-ott 15, 2020 6:22:31 PM it.rossettidigiorgiomonica.circolosportivo.main main
-INFO: Activity testActivity1 edited succesfully
-ott 15, 2020 6:22:31 PM it.rossettidigiorgiomonica.circolosportivo.main main
-INFO: Activity testActivity1 removed succesfully
+ott 15, 2020 6:53:21 PM it.rossettidigiorgiomonica.circolosportivo.main main
+INFO: User user1@sportsclub.it logged in
+ott 15, 2020 6:53:21 PM it.rossettidigiorgiomonica.circolosportivo.main main
+SEVERE: Access Denied: user1@sportsclub.it tried to perform an unauthorized operation: ADD USER
+ott 15, 2020 6:53:21 PM it.rossettidigiorgiomonica.circolosportivo.main main
+SEVERE: Access Denied: user1@sportsclub.it tried to perform an unauthorized operation: EDIT USER
+ott 15, 2020 6:53:21 PM it.rossettidigiorgiomonica.circolosportivo.main main
+SEVERE: Access Denied: user1@sportsclub.it tried to perform an unauthorized operation: DELETE USER
+ott 15, 2020 6:53:21 PM it.rossettidigiorgiomonica.circolosportivo.main main
+SEVERE: Access Denied: user1@sportsclub.it tried to perform an unauthorized operation: ADD ACTIVITY
+ott 15, 2020 6:53:21 PM it.rossettidigiorgiomonica.circolosportivo.main main
+SEVERE: Access Denied: user1@sportsclub.it tried to perform an unauthorized operation: UPDATE ACTIVITY
+ott 15, 2020 6:53:21 PM it.rossettidigiorgiomonica.circolosportivo.main main
+SEVERE: Access Denied: user1@sportsclub.it tried to perform an unauthorized operation: DELETE ACTIVITY
+ott 15, 2020 6:53:21 PM it.rossettidigiorgiomonica.circolosportivo.main main
+INFO: L'utente: user1@sportsclub.it è stato aggiunto all'evento: Activity1
+ott 15, 2020 6:53:21 PM it.rossettidigiorgiomonica.circolosportivo.main main
+INFO: L'utente: user1@sportsclub.it è stato cancellato dall'evento: Activity1

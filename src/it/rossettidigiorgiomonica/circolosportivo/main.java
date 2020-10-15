@@ -33,7 +33,7 @@ public class main {
 			
 			logger.info("User " + toAdd.getEmail() + " added succesfully");
 		} catch (IllegalAccessException e) {
-			logger.severe("Access Denied: " + loggedIn.getEmail() + " tried to perform an unauthorized operation");
+			logger.severe("Access Denied: " + loggedIn.getEmail() + " tried to perform an unauthorized operation: ADD USER");
 		}
 		
 		/// Test Edit Member
@@ -43,7 +43,7 @@ public class main {
 			
 			logger.info("User " + toAdd.getEmail() + " edited succesfully");
 		} catch (IllegalAccessException e) {
-			logger.severe("Access Denied: " + loggedIn.getEmail() + " tried to perform an unauthorized operation");
+			logger.severe("Access Denied: " + loggedIn.getEmail() + " tried to perform an unauthorized operation: EDIT USER");
 		}
 		
 		/// Test Remove Member
@@ -52,7 +52,7 @@ public class main {
 			
 			logger.info("User " + toAdd.getEmail() + " removed succesfully");
 		} catch (IllegalAccessException e) {
-			logger.severe("Access Denied: " + loggedIn.getEmail() + " tried to perform an unauthorized operation");
+			logger.severe("Access Denied: " + loggedIn.getEmail() + " tried to perform an unauthorized operation: DELETE USER");
 		}
 		
 		Activity testActivity = new Course("testActivity1");
@@ -63,7 +63,7 @@ public class main {
 			
 			logger.info("Activity " + testActivity.getActivityName() + " added succesfully");
 		} catch (IllegalAccessException e) {
-			logger.severe("Access Denied: " + loggedIn.getEmail() + " tried to perform an unauthorized operation");
+			logger.severe("Access Denied: " + loggedIn.getEmail() + " tried to perform an unauthorized operation: ADD ACTIVITY");
 		}
 		
 		/// Test Update Activity
@@ -74,7 +74,7 @@ public class main {
 			
 			logger.info("Activity " + testActivity.getActivityName() + " edited succesfully");
 		} catch (IllegalAccessException e) {
-			logger.severe("Access Denied: " + loggedIn.getEmail() + " tried to perform an unauthorized operation");
+			logger.severe("Access Denied: " + loggedIn.getEmail() + " tried to perform an unauthorized operation: UPDATE ACTIVITY");
 		}
 		
 		/// Test Delete Activity
@@ -85,8 +85,19 @@ public class main {
 			
 			logger.info("Activity " + testActivity.getActivityName() + " removed succesfully");
 		} catch (IllegalAccessException e) {
-			logger.severe("Access Denied: " + loggedIn.getEmail() + " tried to perform an unauthorized operation");
+			logger.severe("Access Denied: " + loggedIn.getEmail() + " tried to perform an unauthorized operation: DELETE ACTIVITY");
 		}
+		
+		//Test Add User into Activity 
+		club.eventsRegistration("Activity1",loggedIn);
+		logger.info("L'utente: " + loggedIn.getEmail() +" è stato aggiunto all'evento: "+ "Activity1" );
+		
+		//Test Remove User into Activity
+		club.eventsDeregistration("Activity1",loggedIn);
+		logger.info("L'utente: " + loggedIn.getEmail() +" è stato cancellato dall'evento: "+ "Activity1");
+		
+		
+		
 	}
 	
 	public static Logger initLogger() {	
