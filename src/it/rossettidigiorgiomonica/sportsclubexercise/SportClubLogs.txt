@@ -1,0 +1,18 @@
+ott 16, 2020 2:15:13 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: User admin@sportsclub.it logged in
+ott 16, 2020 2:15:13 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: User testadd@sportclub.it added succesfully
+ott 16, 2020 2:15:13 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: User testadd@sportclub.it edited succesfully
+ott 16, 2020 2:15:13 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: User testadd@sportclub.it removed succesfully
+ott 16, 2020 2:15:13 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: Activity testActivity1 added succesfully
+ott 16, 2020 2:15:13 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: Activity testActivity1 edited succesfully
+ott 16, 2020 2:15:13 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: Activity testActivity1 removed succesfully
+ott 16, 2020 2:15:13 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: User: admin@sportsclub.it has been added to the event: Activity1
+ott 16, 2020 2:15:13 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: User: admin@sportsclub.it has been deleted from event: Activity1

@@ -1,4 +1,4 @@
-package it.rossettidigiorgiomonica.circolosportivo.classes;
+package it.rossettidigiorgiomonica.sportsclubexercise.classes;
 
 import java.util.ArrayList;
 

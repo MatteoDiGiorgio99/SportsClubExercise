@@ -1,4 +1,4 @@
-package it.rossettidigiorgiomonica.circolosportivo;
+package it.rossettidigiorgiomonica.sportsclubexercise;
 
 import java.util.*;
 import java.util.logging.FileHandler;
@@ -8,7 +8,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.*; 
 import java.io.*; 
 
-import it.rossettidigiorgiomonica.circolosportivo.classes.*;
+import it.rossettidigiorgiomonica.sportsclubexercise.classes.*;
 
 
 public class main {
@@ -90,11 +90,11 @@ public class main {
 		
 		//Test Add User into Activity 
 		club.eventsRegistration("Activity1",loggedIn);
-		logger.info("L'utente: " + loggedIn.getEmail() +" è stato aggiunto all'evento: "+ "Activity1" );
+		logger.info("User: " + loggedIn.getEmail() +" has been added to the event: " + "Activity1" );
 		
 		//Test Remove User into Activity
 		club.eventsDeregistration("Activity1",loggedIn);
-		logger.info("L'utente: " + loggedIn.getEmail() +" è stato cancellato dall'evento: "+ "Activity1");
+		logger.info("User: " + loggedIn.getEmail() +" has been deleted from event: " + "Activity1");
 		
 		
 		
@@ -105,7 +105,7 @@ public class main {
 		    Logger logger = Logger.getLogger("SportClubLogs");  
 		    FileHandler fh;
 		    
-			fh = new FileHandler("./src/it/rossettidigiorgiomonica/circolosportivo/SportClubLogs.txt");
+			fh = new FileHandler("./src/it/rossettidigiorgiomonica/sportsclubexercise/SportClubLogs.txt");
 	        logger.addHandler(fh);
 	        SimpleFormatter formatter = new SimpleFormatter();  
 	        fh.setFormatter(formatter);
@@ -121,8 +121,8 @@ public class main {
 	}
 	
 	public static SportClub initClub() {	
-		List<String> activitiesRaw = readFile("./src/it/rossettidigiorgiomonica/circolosportivo/sources/activities.csv");
-		List<String> membersRaw = readFile("./src/it/rossettidigiorgiomonica/circolosportivo/sources/users.csv");
+		List<String> activitiesRaw = readFile("./src/it/rossettidigiorgiomonica/sportsclubexercise/sources/activities.csv");
+		List<String> membersRaw = readFile("./src/it/rossettidigiorgiomonica/sportsclubexercise/sources/users.csv");
 			
 		ArrayList<Activity> activities = parseActivities(activitiesRaw);
 		ArrayList<Person> members = parseMembers(membersRaw);

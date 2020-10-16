@@ -1,4 +1,4 @@
-package it.rossettidigiorgiomonica.circolosportivo.classes;
+package it.rossettidigiorgiomonica.sportsclubexercise.classes;
 
 public class Course extends Activity {
 	public Course(String activityName) {

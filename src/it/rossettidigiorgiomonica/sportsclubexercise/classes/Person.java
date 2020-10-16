@@ -1,4 +1,4 @@
-package it.rossettidigiorgiomonica.circolosportivo.classes;
+package it.rossettidigiorgiomonica.sportsclubexercise.classes;
 
 public  class Person {
 	private String name;
