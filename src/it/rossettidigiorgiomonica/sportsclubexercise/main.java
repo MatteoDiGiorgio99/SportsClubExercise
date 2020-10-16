@@ -13,7 +13,9 @@ import it.rossettidigiorgiomonica.sportsclubexercise.classes.*;
 
 public class main {
 	public static void main(final String[] args) {	
-		SportClub club = initClub();
+		
+		/// Login
+		SportsClub club = initClub();
 		Logger logger = initLogger();
 		
 		Person loggedIn = club.login(args[0], args[1]);
@@ -120,14 +122,14 @@ public class main {
 		return null;
 	}
 	
-	public static SportClub initClub() {	
+	public static SportsClub initClub() {	
 		List<String> activitiesRaw = readFile("./src/it/rossettidigiorgiomonica/sportsclubexercise/sources/activities.csv");
 		List<String> membersRaw = readFile("./src/it/rossettidigiorgiomonica/sportsclubexercise/sources/users.csv");
 			
 		ArrayList<Activity> activities = parseActivities(activitiesRaw);
 		ArrayList<Person> members = parseMembers(membersRaw);
 		
-		SportClub club = new SportClub(members, activities);
+		SportsClub club = new SportsClub(members, activities);
 		
 		return club;
 	}
