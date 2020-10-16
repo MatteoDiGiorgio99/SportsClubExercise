@@ -11,7 +11,23 @@ import java.io.*;
 import it.rossettidigiorgiomonica.sportsclubexercise.classes.*;
 
 
+/**
+ * The {@code main} class defines a behavior that:
+ * 
+ * Allow you to run the program 
+ * 
+ * This method implements communication with other classes
+ * 
+ * @author 296666
+ *
+ */
+
 public class main {
+	
+	/** Defines the logic of execution 
+	 * 
+	 * @param args
+	 */
 	public static void main(final String[] args) {	
 		
 		/// Login
@@ -102,6 +118,10 @@ public class main {
 		
 	}
 	
+	/** Allows you to create the log file where the operations will follow
+	 * 
+	 * @return
+	 */
 	public static Logger initLogger() {	
 		try {
 		    Logger logger = Logger.getLogger("SportClubLogs");  
@@ -122,6 +142,11 @@ public class main {
 		return null;
 	}
 	
+	/**
+	 * initialize the sports club operating on what is read from file
+	 * 
+	 * @return
+	 */
 	public static SportsClub initClub() {	
 		List<String> activitiesRaw = readFile("./src/it/rossettidigiorgiomonica/sportsclubexercise/sources/activities.csv");
 		List<String> membersRaw = readFile("./src/it/rossettidigiorgiomonica/sportsclubexercise/sources/users.csv");
@@ -134,6 +159,13 @@ public class main {
 		return club;
 	}
 	
+	/** 
+	 * Allows you to read and interpret the text file
+	 * 
+	 * @param fileName The file's name
+	 * 
+	 * @return
+	 */
 	public static List<String> readFile(String fileName) 
 	{   
 		List<String> lines = Collections.emptyList(); 
@@ -149,6 +181,13 @@ public class main {
 		return lines;
 	}
 	
+	/**
+	 * Set the inscription on the list of Activities
+	 * 
+	 * @param list The list on which you operate
+	 * 
+	 * @return
+	 */
 	public static ArrayList<Activity> parseActivities(List<String> list) {
 		ArrayList<Activity> result = new ArrayList<Activity>();
 		
@@ -171,6 +210,14 @@ public class main {
 		return result;
 	}
 	
+	/** Set the inscription on the list of Members
+	 * 
+	 * @param list The list on which you operate
+	 * 
+	 * @return
+	 * 
+	 * @throws IllegalFormatException If the members isn't a User or Administrator
+	 */
 	public static ArrayList<Person> parseMembers(List<String> list) throws IllegalFormatException {
 		ArrayList<Person> result = new ArrayList<Person>();
 		
