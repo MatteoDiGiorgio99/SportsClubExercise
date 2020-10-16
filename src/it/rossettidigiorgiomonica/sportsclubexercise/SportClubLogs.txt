@@ -1,18 +1,52 @@
-ott 16, 2020 3:57:00 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
 INFO: User admin@sportsclub.it logged in
-ott 16, 2020 3:57:00 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
-INFO: User testadd@sportclub.it added succesfully
-ott 16, 2020 3:57:00 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
-INFO: User testadd@sportclub.it edited succesfully
-ott 16, 2020 3:57:00 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
-INFO: User testadd@sportclub.it removed succesfully
-ott 16, 2020 3:57:00 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: User testadd1@sportclub.it added succesfully
+ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: User testadd1@sportclub.it edited succesfully
+ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: User testadd2@sportclub.it removed succesfully
+ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
 INFO: Activity testActivity1 added succesfully
-ott 16, 2020 3:57:00 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
-INFO: Activity testActivity1 edited succesfully
-ott 16, 2020 3:57:00 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
-INFO: Activity testActivity1 removed succesfully
-ott 16, 2020 3:57:00 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: Activity testModded1 edited succesfully
+ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: Activity testActivity2 removed succesfully
+ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
 INFO: User: admin@sportsclub.it has been added to the event: Activity1
-ott 16, 2020 3:57:00 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
 INFO: User: admin@sportsclub.it has been deleted from event: Activity1
+ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: Activities: 
+
+activity1
+		2 members joined the activity 
+activity2
+		0 members joined the activity 
+activity3
+		0 members joined the activity 
+activity4
+		0 members joined the activity 
+testModded1
+		0 members joined the activity 
+
+
+5 elements found
+ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+INFO: Members: 
+
+admin@sportsclub.it
+user1@sportsclub.it
+user2@sportsclub.it
+user3@sportsclub.it
+user4@sportsclub.it
+user5@sportsclub.it
+user6@sportsclub.it
+user7@sportsclub.it
+user8@sportsclub.it
+user9@sportsclub.it
+user10@sportsclub.it
+testadd1@sportclub.it
+
+
+12 elements found

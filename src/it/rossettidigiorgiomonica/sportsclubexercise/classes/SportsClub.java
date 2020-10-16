@@ -54,6 +54,12 @@ public class SportsClub {
 		if(activity == null)
 			return;
 		
+		if(!this.members.contains(member))
+			return;
+		
+		if(activity.getActivityPartecipants().contains(member))
+			return;
+		
 		int index = this.activities.indexOf(activity);
 		
 		activity.addActivityPartecipant(member);
@@ -71,6 +77,9 @@ public class SportsClub {
 		Activity activity = getActivityFromList(activityName);
 		
 		if(activity == null)
+			return;
+		
+		if(!this.members.contains(member))
 			return;
 		
 		int index = this.activities.indexOf(activity);
@@ -168,6 +177,41 @@ public class SportsClub {
 			throw new IllegalAccessException();
 		
 		this.activities.remove(activity);
+	}
+	
+	/**
+	 * A method that provides access to the list of activities
+	 * 
+	 * @return
+	 * A string that contains all the info required
+	 */
+	public String getActivityString() {
+		String result = "";
+		for(Activity p : this.activities) {
+			result += p.getActivityName() + "\n";
+			result += "\t\t" + p.getActivityPartecipants().size() + " members joined the activity \n";
+		}
+		
+		result += "\n\n" + this.activities.size() + " elements found";
+		
+		return result;
+	}
+	
+	/**
+	 * A method that provides access to the list of members
+	 * 
+	 * @return
+	 * A string that contains all the info required
+	 */
+	public String getMembersString() {
+		String result = "";
+		for(Person p : this.members) {
+			result += p.getEmail() + "\n";
+		}
+		
+		result += "\n\n" + this.members.size() + " elements found";
+		
+		return result;
 	}
 	
 	/**

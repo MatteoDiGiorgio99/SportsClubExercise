@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"it.rossettidigiorgiomonica.sportsclubexercise"},{"l":"it.rossettidigiorgiomonica.sportsclubexercise.classes"}]
