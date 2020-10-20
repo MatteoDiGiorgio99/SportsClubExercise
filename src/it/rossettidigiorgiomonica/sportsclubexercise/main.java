@@ -28,8 +28,9 @@ public class main {
 	 * Defines the logic of execution 
 	 * 
 	 * @param args the console arguments
+	 * @throws IllegalAccessException in case the string is empty or it doesn't exist
 	 */
-	public static void main(final String[] args) {	
+	public static void main(final String[] args) throws IllegalAccessException {	
 		
 		/// Login
 		SportsClub club = initClub();
@@ -110,17 +111,27 @@ public class main {
 		}
 				
 		/// Test Add User into Activity
+		try {
 		club.eventsRegistration("activity1", pTest1);
 		club.eventsRegistration("activity1", loggedIn);
 		
 		club.eventsRegistration(testActivity1.getActivityName(), pTest1);
 		club.eventsRegistration(testActivity1.getActivityName(), pTest1);
 		logger.info("User: " + loggedIn.getEmail() +" has been added to the event: " + "Activity1" );
+		}catch (IllegalAccessException e) {
+			logger.severe("Access Denied: " + loggedIn.getEmail() + " tried to perform an unauthorized operation: EVENT REGISTRATION");
+		}
+
 		
 		/// Test Remove User into Activity
+		try {
 		club.eventsDeregistration(testActivity1.getActivityName(), pTest1);
 		club.eventsDeregistration(testActivity1.getActivityName(), loggedIn);
 		logger.info("User: " + loggedIn.getEmail() +" has been deleted from event: " + "Activity1");
+		}catch (IllegalAccessException e) {
+			logger.severe("Access Denied: " + loggedIn.getEmail() + " tried to perform an unauthorized operation: EVENT DEREGISTRATION");
+		}
+
 		
 		/// Get all activities
 		logger.info("Activities: \n\n" + club.getActivityString());

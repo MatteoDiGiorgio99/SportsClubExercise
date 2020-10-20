@@ -47,18 +47,26 @@ public class SportsClub {
 	 * 
 	 * @param activityName the activity to join 
 	 * @param member the user to join 
+	 * @throws IllegalAccessException in case the string is empty or it doesn't exist
 	 */
-	public void eventsRegistration(final String activityName, final Person member) {
+	public void eventsRegistration(final String activityName, final Person member) throws IllegalAccessException {
+		
 		Activity activity = getActivityFromList(activityName);
 		
+		if(activityName == null && activityName.isEmpty()== false)
+			throw new IllegalAccessException();
+		
+		if(member == null)
+			throw new IllegalAccessException();
+		
 		if(activity == null)
-			return;
+			throw new IllegalAccessException();
 		
 		if(!this.members.contains(member))
-			return;
+			throw new IllegalAccessException();
 		
 		if(activity.getActivityPartecipants().contains(member))
-			return;
+			throw new IllegalAccessException();
 		
 		int index = this.activities.indexOf(activity);
 		
@@ -72,15 +80,22 @@ public class SportsClub {
 	 * 
 	 * @param activityName the activity name
 	 * @param member the member to unsubscribe
+	 * @throws IllegalAccessException in case the string is empty or it doesn't exist
 	 */
-	public void eventsDeregistration(final String activityName, final Person member) {
+	public void eventsDeregistration(final String activityName, final Person member) throws IllegalAccessException {
 		Activity activity = getActivityFromList(activityName);
 		
+		if(activityName == null && activityName.isEmpty()== false)
+			throw new IllegalAccessException();
+		
+		if(member == null)
+			throw new IllegalAccessException();
+		
 		if(activity == null)
-			return;
+			throw new IllegalAccessException();
 		
 		if(!this.members.contains(member))
-			return;
+			throw new IllegalAccessException();
 		
 		int index = this.activities.indexOf(activity);
 		
@@ -97,8 +112,12 @@ public class SportsClub {
 	 * @throws IllegalAccessException in case the user isn't an administrator
 	 */
 	public void addMember(final Person admin, final Person member) throws IllegalAccessException {
-		if(admin.getRole() != Role.Admin)
+		if(admin.getRole() != Role.Admin && admin == null)
 			throw new IllegalAccessException();
+		
+		if(member == null)
+			throw new IllegalAccessException();
+		
 		
 		this.members.add(member);
 	}
@@ -112,7 +131,13 @@ public class SportsClub {
 	 * @throws IllegalAccessException in case the user isn't an administrator
 	 */
 	public void editMember(final Person admin, final String memberEmail, final Person editedMember) throws IllegalAccessException {
-		if(admin.getRole() != Role.Admin)
+		if(admin.getRole() != Role.Admin && admin == null)
+			throw new IllegalAccessException();
+		
+		if(memberEmail == null && memberEmail.isEmpty()== false)
+			throw new IllegalAccessException();
+		
+		if(editedMember == null)
 			throw new IllegalAccessException();
 		
 		int personIndex = this.members.indexOf(getMemberFromList(memberEmail));
@@ -128,7 +153,10 @@ public class SportsClub {
 	 * @throws IllegalAccessException in case the user isn't an administrator
 	 */
 	public void removeMember(final Person admin, final Person member) throws IllegalAccessException {
-		if(admin.getRole() != Role.Admin)
+		if(admin.getRole() != Role.Admin && admin == null)
+			throw new IllegalAccessException();
+		
+		if(member == null)
 			throw new IllegalAccessException();
 		
 		this.members.remove(member);
@@ -142,7 +170,10 @@ public class SportsClub {
 	 * @throws IllegalAccessException in case the user isn't an administrator
 	 */
 	public void addActivity(final Person admin, final Activity activity) throws IllegalAccessException {
-		if(admin.getRole() != Role.Admin)
+		if(admin.getRole() != Role.Admin && admin == null)
+			throw new IllegalAccessException();
+		
+		if(activity == null)
 			throw new IllegalAccessException();
 		
 		this.activities.add(activity);
@@ -156,11 +187,17 @@ public class SportsClub {
 	 * @throws IllegalAccessException in case the user isn't an administrator
 	 */
 	public void editActivity(final Person admin, final String activityName, final Activity editedActivity) throws IllegalAccessException {
-		if(admin.getRole() != Role.Admin)
+		if(admin.getRole() != Role.Admin && admin == null)
 			throw new IllegalAccessException();
 		
 		Activity activityFromList = getActivityFromList(activityName);
 		int activityIndex = this.activities.indexOf(activityFromList);
+		
+		if(activityName == null && activityName.isEmpty()== false)
+			throw new IllegalAccessException();
+		
+		if(editedActivity == null)
+			throw new IllegalAccessException();
 		
 		this.activities.set(activityIndex, editedActivity);
 	}
@@ -173,7 +210,10 @@ public class SportsClub {
 	 * @throws IllegalAccessException in case the user isn't an administrator
 	 */
 	public void removeActivity(final Person admin, final Activity activity) throws IllegalAccessException {
-		if(admin.getRole() != Role.Admin)
+		if(admin.getRole() != Role.Admin && admin == null)
+			throw new IllegalAccessException();
+		
+		if(activity == null)
 			throw new IllegalAccessException();
 		
 		this.activities.remove(activity);

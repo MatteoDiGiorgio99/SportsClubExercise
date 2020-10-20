@@ -1,22 +1,22 @@
-ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+ott 20, 2020 3:24:46 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
 INFO: User admin@sportsclub.it logged in
-ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+ott 20, 2020 3:24:46 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
 INFO: User testadd1@sportclub.it added succesfully
-ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+ott 20, 2020 3:24:46 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
 INFO: User testadd1@sportclub.it edited succesfully
-ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+ott 20, 2020 3:24:46 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
 INFO: User testadd2@sportclub.it removed succesfully
-ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+ott 20, 2020 3:24:46 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
 INFO: Activity testActivity1 added succesfully
-ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+ott 20, 2020 3:24:46 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
 INFO: Activity testModded1 edited succesfully
-ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+ott 20, 2020 3:24:46 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
 INFO: Activity testActivity2 removed succesfully
-ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
-INFO: User: admin@sportsclub.it has been added to the event: Activity1
-ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+ott 20, 2020 3:24:46 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+SEVERE: Access Denied: admin@sportsclub.it tried to perform an unauthorized operation: EVENT REGISTRATION
+ott 20, 2020 3:24:46 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
 INFO: User: admin@sportsclub.it has been deleted from event: Activity1
-ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+ott 20, 2020 3:24:46 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
 INFO: Activities: 
 
 activity1
@@ -32,7 +32,7 @@ testModded1
 
 
 5 elements found
-ott 16, 2020 5:17:36 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
+ott 20, 2020 3:24:46 PM it.rossettidigiorgiomonica.sportsclubexercise.main main
 INFO: Members: 
 
 admin@sportsclub.it

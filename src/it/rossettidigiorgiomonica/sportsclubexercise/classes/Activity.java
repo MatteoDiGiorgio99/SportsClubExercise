@@ -38,10 +38,10 @@ public abstract class Activity {
 	 * Permit to modify the activity name. 
 	 * @param admin user with the necessary permission to modify the activity.
 	 * @param newName the new activity name 
-	 * @throws IllegalAccessException in case the current user doesn't have permissions
+	 * @throws IllegalAccessException in case the current user doesn't have permissions or the string is empty or it doesn't exist
 	 */	
 	public void setActivityName(Person admin, String newName) throws IllegalAccessException {
-		if(admin.getRole() != Role.Admin)
+		if(admin.getRole() != Role.Admin && newName != null && newName.isEmpty()== false)
 			throw new IllegalAccessException();
 		
 		this.activityName = newName; 
@@ -58,12 +58,14 @@ public abstract class Activity {
 	/**
 	 * Adds to the activity a participant
 	 * @param toAdd participant to be added
+	 * @throws IllegalAccessException in case the string is empty or it doesn't exist
 	 */
-	public void addActivityPartecipant(Person toAdd) { this.activityPartecipants.add(toAdd); }
+	public void addActivityPartecipant(Person toAdd) throws IllegalAccessException{if(toAdd != null) this.activityPartecipants.add(toAdd); else throw new IllegalAccessException();}
 	
 	/**
 	 * Removes a participant from the activity
 	 * @param toRemove  participant to be removed
+	 * @throws IllegalAccessException in case the string is empty or it doesn't exist
 	 */
-	public void removeActivityPartecipant(Person toRemove) { this.activityPartecipants.remove(toRemove); } 
+	public void removeActivityPartecipant(Person toRemove)throws IllegalAccessException {if(toRemove != null) this.activityPartecipants.remove(toRemove);else throw new IllegalAccessException(); } 
 }
